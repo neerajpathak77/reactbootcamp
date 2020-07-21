@@ -16,8 +16,7 @@ Time : Approx. 90 min
  - How html and js work together (script tag)
  
 **Separation of concern:** 
- - Example is you don't wanna to put your cloths in kitchen kind of situations in code
- - Separation of behavior(js) and content (html)
+ - Separation of behavior(js) and content (html) (Example is you don't wanna to keep your cloths in kitchen)
  
 **JavaScript in Node.js:** 
  - How to run a js file in Node.js
