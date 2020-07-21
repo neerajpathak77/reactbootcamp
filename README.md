@@ -35,7 +35,7 @@ Time : Approx. 90 min
  - Basic Introduction to prototype how it is responsible in inheritance(only introduction)
  
   **this:**
- - Basic Introduction to this (only introduction)
+ - Basic Introduction (only introduction)
  
 **Arrow Function:**
  - How / why they are useful
