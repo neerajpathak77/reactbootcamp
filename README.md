@@ -22,18 +22,24 @@ Time : Approx. 90 min
  - How to run a js file in Node.js
 
 **Variables**: 
- - What they are how stored in memory
+ - What they are and how they stored in memory
  - Declaration rules like they can not start from a number, cannot contain space, hyphen, reserve keywords, should be  meaningful and so on.
  - var, let, const, scopes (Execution Contexts / Hoisting is NOT covered)
- - All permeative / value types 
+ - All primitive / value types 
  - Reference types (object, function, array)
  
 **Dynamic Typed:**
  - Explanation with some typeof after different assignments
  
+ **Prototype:**
+ - Basic Introduction to prototype how it is responsible in inheritance(only introduction)
+ 
+  **this:**
+ - Basic Introduction to this (only introduction)
+ 
 **Arrow Function:**
- - How / why useful
- - Introduction to Prototype (NOT in deep just to understand why **this** is different)
+ - How / why they are useful
+ - Introduction to Prototype (NOT in deep just to understand why **this** is different in arrow function then normal function)
  
 **Closures and callback:** 
  - Introduction to closure and uses
