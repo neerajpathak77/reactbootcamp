@@ -1,5 +1,6 @@
 ## Basic JavaScript
 Time : Approx. 90 min
+
 **Intro:**
  - What is JavaScript
  - What can you do with it 
