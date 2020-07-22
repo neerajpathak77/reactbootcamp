@@ -6,7 +6,6 @@
 
 **App Repo:**  [https://github.com/neerajpathak77/bootcamp-react-native-chat](https://github.com/neerajpathak77/bootcamp-react-native-chat)
 
-
 What we will do here ?
   -
   -
@@ -14,3 +13,4 @@ What we will do here ?
   -
   -
 
+#### Discuss your ideas / issues here: https://spectrum.chat/let-stalkreact-js?tab=posts
