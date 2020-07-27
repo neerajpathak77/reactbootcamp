@@ -79,6 +79,6 @@
 14. Consuming Multiple Contexts
 15. React Render Props
 
-### Optional problem solving sessions only if needed (We can discuss some problems together or some other things like testing components)
+### Optional problem solving sessions only if needed (We can discuss some problems together or some other things like unit testing components)
 #### Discuss your ideas / issues here: https://spectrum.chat/let-stalkreact-js?tab=posts
 
