@@ -39,7 +39,16 @@ Time : Approx. 90 min
  
 **Arrow Function:**
  - How / why they are useful
- - Introduction to Prototype (NOT in deep just to understand why **this** is different in arrow function then normal function)
+ -  Arrow Functions and this (NOT in deep just to understand why **this** is different in arrow function then normal function)
+
+**Some commonly used things:**
+- Array.map Method 
+- Object Destructuring 
+- Spread Operator 
+- Classes 
+- Inheritance (ONLY how to use not How it works)
+- Modules (Overview only)
+- Named and Default Exports 
  
 **Closures and callback:** 
  - Introduction to closure and uses
@@ -49,3 +58,4 @@ Time : Approx. 90 min
  - How they solve different problems of callback
  - How they play very important role in inversion the controls  
  - Only introduction and small code examples
+
