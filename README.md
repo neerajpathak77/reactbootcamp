@@ -8,7 +8,8 @@
 **App Repo:**  [https://github.com/neerajpathak77/bootcamp-react-native-chat](https://github.com/neerajpathak77/bootcamp-react-native-chat)
 
 ## What we will do here ?
-
+### ES6 Refresher
+1. [https://github.com/neerajpathak77/reactbootcamp/tree/javascript-introduction](https://github.com/neerajpathak77/reactbootcamp/tree/javascript-introduction)
 ### Getting Started
 1. What is React 
 2. Setting Up the Development Environment 
@@ -80,3 +81,4 @@
 
 ### Optional problem solving sessions only if needed (We can discuss some problems together or some other things like testing components)
 #### Discuss your ideas / issues here: https://spectrum.chat/let-stalkreact-js?tab=posts
+
