@@ -1,10 +1,9 @@
 import React from 'react';
+import Counter from './components/counter';
 
 function App() {
   return (
-    <p>
-      Welcome to the Bootcamp.
-    </p>
+    <Counter />
   );
 }
 
