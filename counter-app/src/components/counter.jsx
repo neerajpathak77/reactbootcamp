@@ -7,9 +7,11 @@ class Counter extends Component {
   }
 
   render() {
-    // Remember Before using prop in state just print this and show it how it looks
+    // Remember to show props for children property
+    // console.log(this.props)
     return (
       <div>
+        {this.props.children}
         <span className={this.getBadgeClasses()}> {this.formatCount()}</span>
         <button 
           className="btn btn-secondary btn-sm"
