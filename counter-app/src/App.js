@@ -2,10 +2,18 @@ import React from 'react';
 import Counters from './components/counters';
 import NavBar from './components/navBar';
 
-// Now to share the state between the elements which do not have a parent child relation 
-// We have to lift the state. 
-// In next steps we will add context API to handle the data
-// 
+// *****MOUNT*****
+// 1. constructor
+// 2. render
+// componentDidMount
+// *****UPDATE*****
+// 1. render
+// 2. componentDidUpdate
+// componentDidMount
+// *****UNMOUNT*****
+// 1. componentWillUnmount
+// Few more advance / rarely used Hooks are there we wil talk about them on later stage.
+
 
 class App extends React.Component {
   state = { 
