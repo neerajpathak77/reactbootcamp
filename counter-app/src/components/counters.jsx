@@ -13,7 +13,11 @@ class Counters extends Component {
   }
   // Rule of thumb a component owns a piece of state should be the one modifying it
   handleDelete = (id) => {
-    console.log(id)
+    // const counters = this.state.counters.filter(counter => id !== counter.id)
+    // this.setState({ counters })
+    this.setState(prevState => ({
+      counters: prevState.counters.filter(counter => id !== counter.id)
+    }))
   }
 
   renderCounter = () => {
@@ -21,9 +25,11 @@ class Counters extends Component {
     return counters.map(counter => (
       <Counter 
         key={counter.id}
-        value={counter.value}
-        id={counter.id}
         onDelete={this.handleDelete}
+        // value={counter.value}
+        // id={counter.id}
+        {...counter}
+        // or like counter={counter}
       >
         <h6> Counter # {counter.id} </h6>
       </Counter>
