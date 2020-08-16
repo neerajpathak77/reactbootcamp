@@ -48,6 +48,8 @@
 16. Mounting Phase 
 17. Updating Phase 
 18. Unmounting Phase 
+19. Refactor code with context API developen in step 12
+
 ### Advanced Topics
 1. Introduction
 2. Source Code (some starter code)
