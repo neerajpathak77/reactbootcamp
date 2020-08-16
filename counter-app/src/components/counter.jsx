@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
   state = { 
-    count: 33
+    count: 0,
+    tags: ['tag-1', 'tag-2', 'tag-3']
   }
 
   render() {
@@ -12,6 +13,11 @@ class Counter extends Component {
       <div>
         <span className={classes}> {this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
+        <ul>
+          {this.state.tags.map(tag => <li>{tag}</li>)}
+          {/* {tags.map(tag =>  <li key={tag}>{tag}</li>)} */} 
+          {/* destructors state and add key and explain Reason why each item in list should have a key */}
+        </ul>
       </div>
     )
   }
@@ -19,7 +25,6 @@ class Counter extends Component {
   formatCount = () => {
     const { count } = this.state;
 
-    // Remember We can even return JSX like <span> Zero </span>
     return count === 0 ? 'Zero' : count;
   }
 
