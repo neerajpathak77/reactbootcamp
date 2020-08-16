@@ -13,13 +13,19 @@ class Counter extends Component {
       <div>
         <span className={classes}> {this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
-        <ul>
-          {this.state.tags.map(tag => <li>{tag}</li>)}
-          {/* {tags.map(tag =>  <li key={tag}>{tag}</li>)} */} 
-          {/* destructors state and add key and explain Reason why each item in list should have a key */}
-        </ul>
+        {this.renderTags()}
       </div>
     )
+  }
+
+  renderTags = () => {
+    const { tags } = this.state;
+    return tags.length ? 
+    (<ul>
+      {tags.map(tag =>  <li key={tag}>{tag}</li>)} 
+    </ul>)
+    :
+    <p>Please create a tag first</p>
   }
 
   formatCount = () => {
