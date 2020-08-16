@@ -2,20 +2,29 @@ import React from 'react';
 import Counters from './components/counters';
 import NavBar from './components/navBar';
 
-// *****MOUNT*****
-// 1. constructor
-// 2. render
-// componentDidMount
-// *****UPDATE*****
-// 1. render
-// 2. componentDidUpdate
-// componentDidMount
-// *****UNMOUNT*****
-// 1. componentWillUnmount
-// Few more advance / rarely used Hooks are there we wil talk about them on later stage.
-
+// Mounting phase
+// constructor()
+// getDerivedStateFromProps()
+// render()
+// componentDidMount()
+// Note: The componentWillMount() method is considered legacy and you should avoid them in new code:
+// UNSAFE_componentWillMount()
+// ****** Remember in react strictMode (https://reactjs.org/docs/strict-mode.html)
+// constructor is run twice so remember this to explain and to switch off before showing
+// Mounting is recursive it means all the children are also rendered
 
 class App extends React.Component {
+
+  constructor(props){
+    super(props)
+    console.log('App - constructor')
+  }
+
+  componentDidMount(){
+    // Right place to make a fetch call and get data
+    console.log('App - componentDidMount')
+  }
+
   state = { 
     counters: [
       {id: 1, value: 2 },
@@ -47,6 +56,7 @@ class App extends React.Component {
   }
 
   render(){
+    console.log('App - render')
     const { counters } = this.state;
     return (
       <>
