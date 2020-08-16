@@ -3,29 +3,24 @@ import React, { Component } from 'react';
 class Counter extends Component {
   state = { 
     count: 0,
-    tags: ['tag-1', 'tag-2', 'tag-3']
   }
 
   render() {
-    const classes = this.getBadgeClasses();
-
     return (
       <div>
-        <span className={classes}> {this.formatCount()}</span>
-        <button className="btn btn-secondary btn-sm">Increment</button>
-        {this.renderTags()}
+        <span className={this.getBadgeClasses()}> {this.formatCount()}</span>
+        <button 
+          className="btn btn-secondary btn-sm"
+          onClick={this.handleIncrement}
+        >
+          Increment
+        </button>
       </div>
     )
   }
-
-  renderTags = () => {
-    const { tags } = this.state;
-    return tags.length ? 
-    (<ul>
-      {tags.map(tag =>  <li key={tag}>{tag}</li>)} 
-    </ul>)
-    :
-    <p>Please create a tag first</p>
+  // Remember to start with normal method then this will break and change the method to arrow function
+  handleIncrement() {
+    console.log('state-> ', this.state.count) // error
   }
 
   formatCount = () => {
