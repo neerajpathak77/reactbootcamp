@@ -48,20 +48,6 @@
 16. Mounting Phase 
 17. Updating Phase 
 18. Unmounting Phase 
-### Routing
-1. Introduction
-2. Setup
-3. Adding Routing 
-4. Switch 
-5. Link
-6. Route Props 
-7.  Passing Props 
-8. Route Parameters 
-9. Optional Parameters 
-10. Query String Parameters  
-11. Redirects 
-12.  Programmatic Navigation 
-13. Nested Routing 
 ### Advanced Topics
 1. Introduction
 2. Source Code (some starter code)
@@ -79,6 +65,20 @@
 14. Updating the Context 
 15. Consuming Multiple Contexts
 16. React Render Props
+### Routing
+1. Introduction
+2. Setup
+3. Adding Routing 
+4. Switch 
+5. Link
+6. Route Props 
+7.  Passing Props 
+8. Route Parameters 
+9. Optional Parameters 
+10. Query String Parameters  
+11. Redirects 
+12.  Programmatic Navigation 
+13. Nested Routing 
 
 ### Optional problem solving sessions only if needed (We can discuss some problems together or some other things like unit testing components)
 #### Discuss your ideas / issues here: https://spectrum.chat/let-stalkreact-js?tab=posts
