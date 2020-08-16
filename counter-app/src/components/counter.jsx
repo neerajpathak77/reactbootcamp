@@ -7,8 +7,6 @@ class Counter extends Component {
   }
 
   render() {
-    // Remember to show props for children property
-    // console.log(this.props)
     return (
       <div>
         {this.props.children}
@@ -24,6 +22,8 @@ class Counter extends Component {
   }
 
   handleIncrement = (product) => {
+    // Remember to show what happens if we try to change props value
+    // this.props.value = 0;
     this.setState({ value: this.state.value + 1 })
   }
 

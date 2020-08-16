@@ -3,11 +3,7 @@ import Counter from './counter';
 
 class Counters extends Component {
 
-  // Explain how why React debugger tools
-  // How to use
-  // Why to use
-  // $r 
-  // $r.render() // or any method can be executed from console
+  // Explanation props and states and difference
  
   state = { 
     counters: [
