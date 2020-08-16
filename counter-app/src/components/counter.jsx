@@ -21,7 +21,9 @@ class Counter extends Component {
   }
 
   handleIncrement = () => {
-    // this.state.count++ // DOM don't know these changes 
+    // Explain What Happens When State Changes.
+    // Virtual DOM how it works and inspect the webpage click increment button
+    // Show that only span will update
     this.setState({ count: this.state.count + 1 })
   }
 
