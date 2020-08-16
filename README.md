@@ -39,7 +39,7 @@
 7. Raising and Handling Events 
 8. Updating the State 
 9. Single Source of Truth (We should have)
-10. Removing the Local State (to get single source of truth)
+10. Removing the Local State (to get single source of truth Controlled component)
 11. Multiple Components in Sync 
 12. Lifting the State Up 
 13. Stateless Functional Components
