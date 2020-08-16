@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Counter from './counter';
 
 class Counters extends Component {
-
-  // Explanation props and states and difference
  
   state = { 
     counters: [
@@ -13,6 +11,10 @@ class Counters extends Component {
       {id: 4, value: 1 }
     ],
   }
+  // Rule of thumb a component owns a piece of state should be the one modifying it
+  handleDelete = (id) => {
+    console.log(id)
+  }
 
   renderCounter = () => {
     const { counters } =  this.state;
@@ -20,6 +22,8 @@ class Counters extends Component {
       <Counter 
         key={counter.id}
         value={counter.value}
+        id={counter.id}
+        onDelete={this.handleDelete}
       >
         <h6> Counter # {counter.id} </h6>
       </Counter>

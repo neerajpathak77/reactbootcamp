@@ -7,6 +7,8 @@ class Counter extends Component {
   }
 
   render() {
+    const { onDelete, id } = this.props
+
     return (
       <div>
         {this.props.children}
@@ -17,13 +19,17 @@ class Counter extends Component {
         >
           Increment
         </button>
+        <button 
+          className="btn btn-danger btn-sm m-2"
+          onClick={() => onDelete(id)}
+        >
+          Delete
+        </button>
       </div>
     )
   }
 
   handleIncrement = (product) => {
-    // Remember to show what happens if we try to change props value
-    // this.props.value = 0;
     this.setState({ value: this.state.value + 1 })
   }
 
