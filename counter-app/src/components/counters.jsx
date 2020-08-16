@@ -12,30 +12,35 @@ class Counters extends Component {
     ],
   }
 
-  // Here we have a big issue we do not have a single source  of truth. Here the Reset button 
-  // successfully  updates the state but still the DOM doesn't gets updated because the counter component
-  // has it's own local state so it is not reflected. this kind of scenarios are MUST to take care
-  // Show react debugger where state is correct but child had it's own state copied from prop
-  // state = {  value: this.props.value }
-
   handleReset = () => {
     this.setState(prevState => ({
       counters: prevState.counters.map(counter => ({...counter, value: 0 }))
     }))
   }
 
-  handleDelete = (id) => {
+  handleDelete = id => {
     this.setState(prevState => ({
       counters: prevState.counters.filter(counter => id !== counter.id)
     }))
+  }
+
+  handleIncrement = counter => {
+    let counters = [...this.state.counters];
+    const index = counters.indexOf(counter);
+    const cntr = { ...counter }
+    cntr.value += 1
+    counters[index] = cntr;
+    this.setState({ counters });
   }
 
   renderCounter = () => {
     const { counters } =  this.state;
     return counters.map(counter => (
       <Counter 
+        counter={counter}
         key={counter.id}
-        {...counter}
+        onDelete={this.handleDelete}
+        onIncrement={this.handleIncrement}
       >
         <h6> Counter # {counter.id} </h6>
       </Counter>
