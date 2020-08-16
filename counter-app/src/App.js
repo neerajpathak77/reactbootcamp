@@ -2,28 +2,18 @@ import React from 'react';
 import Counters from './components/counters';
 import NavBar from './components/navBar';
 
-// Mounting phase
-// constructor()
-// getDerivedStateFromProps()
+// Updating phase
+// static getDerivedStateFromProps()
+// shouldComponentUpdate()
 // render()
-// componentDidMount()
-// Note: The componentWillMount() method is considered legacy and you should avoid them in new code:
-// UNSAFE_componentWillMount()
-// ****** Remember in react strictMode (https://reactjs.org/docs/strict-mode.html)
-// constructor is run twice so remember this to explain and to switch off before showing
-// Mounting is recursive it means all the children are also rendered
+// getSnapshotBeforeUpdate()
+// componentDidUpdate()
+// Note: These methods are considered legacy and you should avoid them in new code:
+
+// UNSAFE_componentWillUpdate()
+// UNSAFE_componentWillReceiveProps()
 
 class App extends React.Component {
-
-  constructor(props){
-    super(props)
-    console.log('App - constructor')
-  }
-
-  componentDidMount(){
-    // Right place to make a fetch call and get data
-    console.log('App - componentDidMount')
-  }
 
   state = { 
     counters: [
@@ -56,7 +46,6 @@ class App extends React.Component {
   }
 
   render(){
-    console.log('App - render')
     const { counters } = this.state;
     return (
       <>

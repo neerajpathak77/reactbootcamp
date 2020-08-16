@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
+
+  componentDidUpdate(prevProps, prevState){
+    console.log('Counter - componentDidUpdate', prevProps, prevState)
+    if(prevProps.counter.value !== this.props.counter.value){
+      console.log('Here optimize code to take actions')
+    }
+  }
  
   render() {
+    console.log('Counter - render')
+
     const { 
       counter, onDelete, onIncrement, children 
     }  = this.props;
