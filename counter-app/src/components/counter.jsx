@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
+ 
+  // constructor(){
+  //   // Remember to show the error if constructor is called without super
+  //   // console.log(this)
+  //   super()
+  //   this.handleIncrement = this.handleIncrement.bind(this)
+  // }
+
   state = { 
     count: 0,
   }
@@ -18,9 +26,13 @@ class Counter extends Component {
       </div>
     )
   }
-  // Remember to start with normal method then this will break and change the method to arrow function
-  handleIncrement() {
-    console.log('state-> ', this.state.count) // error
+
+  // handleIncrement() {
+  //   console.log('state-> ', this.state.count)
+  // }
+
+  handleIncrement = () => {
+    console.log('state-> ', this.state.count)
   }
 
   formatCount = () => {
