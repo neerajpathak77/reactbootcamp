@@ -2,18 +2,15 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
   state = { 
-    count: 0
-  }
-
-  // Sometime we need to break the rules but only do it when you know what you are doing.
-  style = {
-    fontSize: 20,
+    count: 33
   }
 
   render() {
+    const classes = this.getBadgeClasses();
+
     return (
       <div>
-        <span style={ this.style } className="badge badge-primary m-2"> {this.formatCount()}</span>
+        <span className={classes}> {this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
       </div>
     )
@@ -24,6 +21,12 @@ class Counter extends Component {
 
     // Remember We can even return JSX like <span> Zero </span>
     return count === 0 ? 'Zero' : count;
+  }
+
+  getBadgeClasses() {
+    let classes = "badge m-2 ";
+    classes += this.state.count === 0 ? 'badge-warning' : 'badge-primary';
+    return classes;
   }
 }
  
