@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
- 
+  // INTRODUCTION
+  // 1. Pass Data
+  // 2. Raise and handle Events
+  // 3. Multiple Components in Sync
+  // 4. Functional Components
+  // 5. LifeCycle Hooks
   state = { 
     count: 0,
   }
@@ -23,11 +28,6 @@ class Counter extends Component {
   handleIncrement = (product) => {
     console.log(product)
   }
-
-  // start with worst code to pass a parameters 
-  // doHandleIncrement = () => {
-  //   this.handleIncrement({ id: 1 })
-  // }
 
   formatCount = () => {
     const { count } = this.state;
