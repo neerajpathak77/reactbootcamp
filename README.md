@@ -69,15 +69,16 @@
 4. Implementing a Higher Order Component 
 5. Hooks
 6. The useState Hook 
-7. The useEffect Hook 
-8. Custom Hooks 
-9. Fetching Data with Hooks 
-10. Context 
-11. Context in Class Components 
-12. Context in Functional Components 
-13. Updating the Context 
-14. Consuming Multiple Contexts
-15. React Render Props
+7. The useEffect Hook
+8. The useReducer Hook
+9. Custom Hooks 
+10. Fetching Data with Hooks 
+11. Context 
+12. Context in Class Components 
+13. Context in Functional Components 
+14. Updating the Context 
+15. Consuming Multiple Contexts
+16. React Render Props
 
 ### Optional problem solving sessions only if needed (We can discuss some problems together or some other things like unit testing components)
 #### Discuss your ideas / issues here: https://spectrum.chat/let-stalkreact-js?tab=posts
