@@ -1,32 +1,39 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
-
-  componentWillUnmount(){
-    console.log('Counter - componentWillUnmount')
-  }
  
   render() {
     const { 
-      counter, onDelete, onIncrement, children 
+      counter, onDelete, onIncrement, onDecrement, children 
     }  = this.props;
 
     return (
-      <div>
-        {children}
-        <span className={this.getBadgeClasses()}> {this.formatCount()}</span>
-        <button 
-          className="btn btn-secondary btn-sm"
-          onClick={() => onIncrement(counter)}
-        >
-          Increment
-        </button>
-        <button 
-          className="btn btn-danger btn-sm m-2"
-          onClick={() => onDelete(counter.id)}
-        >
-          Delete
-        </button>
+      <div className="row">
+        <div className="col-1">
+          {children}
+          <span className={this.getBadgeClasses()}> {this.formatCount()}</span>
+        </div>
+        <div className="col">
+          <button 
+            className="btn btn-secondary btn-sm"
+            onClick={() => onIncrement(counter)}
+          >
+            +
+          </button>
+          <button 
+            className="btn btn-secondary btn-sm m-2"
+            onClick={() => onDecrement(counter)}
+            disabled={counter.value===0}
+          >
+            -
+          </button>
+          <button 
+            className="btn btn-danger btn-sm"
+            onClick={() => onDelete(counter.id)}
+          >
+            Delete
+          </button>
+        </div>
       </div>
     )
   }

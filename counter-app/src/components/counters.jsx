@@ -4,13 +4,14 @@ import Counter from './counter';
 class Counters extends Component {
  
   renderCounter = () => {
-    const { counters, handleDelete, handleIncrement } =  this.props;
+    const { counters, handleDelete, onIncrement, onDecrement } =  this.props;
     return counters.map(counter => (
       <Counter 
         counter={counter}
         key={counter.id}
         onDelete={handleDelete}
-        onIncrement={handleIncrement}
+        onIncrement={onIncrement}
+        onDecrement={onDecrement}
       >
         <h6> Counter # {counter.id} </h6>
       </Counter>

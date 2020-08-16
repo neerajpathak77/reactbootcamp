@@ -45,6 +45,15 @@ class App extends React.Component {
     this.setState({ counters });
   }
 
+  handleDecrement = counter => {
+    let counters = [...this.state.counters];
+    const index = counters.indexOf(counter);
+    const cntr = { ...counter }
+    cntr.value -= 1
+    counters[index] = cntr;
+    this.setState({ counters });
+  }
+
   render(){
     const { counters } = this.state;
     return (
@@ -52,7 +61,8 @@ class App extends React.Component {
         <NavBar totalCounters={counters.filter(c => c.value > 0).length} />
         <Counters
           counters={counters}
-          handleIncrement={this.handleIncrement}
+          onIncrement={this.handleIncrement}
+          onDecrement={this.handleDecrement}
           handleDelete={this.handleDelete}
           handleReset={this.handleReset}
         />
