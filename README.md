@@ -8,8 +8,19 @@
 **App Repo:**  [https://github.com/neerajpathak77/bootcamp-react-native-chat](https://github.com/neerajpathak77/bootcamp-react-native-chat)
 
 ## What we will do here ?
-### ES6 Refresher
-1. [https://github.com/neerajpathak77/reactbootcamp/tree/javascript-introduction](https://github.com/neerajpathak77/reactbootcamp/tree/javascript-introduction)
+### Quick Starter
+You can develop the react app on any editor of your choice but I recommend you to use VSCode so that you can get quick help in case you stuck somewhere as most of us know it better.
+On top of it I would recommend to install plugins 'Simple React Snippets' and 'Prettier' to your IDE those can make life a bit easy for you however it's not mandatory to work with react.
+
+Please try to set up the starter project 
+1. Install node https://nodejs.org/en/download/ 
+2. Check out the branch [https://github.com/neerajpathak77/reactbootcamp/tree/quick-starter](https://github.com/neerajpathak77/reactbootcamp/tree/quick-starter)
+3. Open terminal and navigate to folder 'counter-app'
+4. execute command --> npm i
+5. execute command --> npm run start
+6. Go to browser and navigate to [http://localhost:3000/](http://localhost:3000/)
+7. You are good to go
+
 ### Getting Started
 1. What is React 
 2. Setting Up the Development Environment 
@@ -39,7 +50,7 @@
 7. Raising and Handling Events 
 8. Updating the State 
 9. Single Source of Truth (We should have)
-10. Removing the Local State (to get single source of truth)
+10. Removing the Local State (to get single source of truth Controlled component)
 11. Multiple Components in Sync 
 12. Lifting the State Up 
 13. Stateless Functional Components
@@ -48,20 +59,9 @@
 16. Mounting Phase 
 17. Updating Phase 
 18. Unmounting Phase 
-### Routing
-1. Introduction
-2. Setup
-3. Adding Routing 
-4. Switch 
-5. Link
-6. Route Props 
-7.  Passing Props 
-8. Route Parameters 
-9. Optional Parameters 
-10. Query String Parameters  
-11. Redirects 
-12.  Programmatic Navigation 
-13. Nested Routing 
+19. Refactor code with context API from step 12
+20. Introduction to Hooks and convert everything to functional components
+
 ### Advanced Topics
 1. Introduction
 2. Source Code (some starter code)
@@ -79,6 +79,20 @@
 14. Updating the Context 
 15. Consuming Multiple Contexts
 16. React Render Props
+### Routing
+1. Introduction
+2. Setup
+3. Adding Routing 
+4. Switch 
+5. Link
+6. Route Props 
+7.  Passing Props 
+8. Route Parameters 
+9. Optional Parameters 
+10. Query String Parameters  
+11. Redirects 
+12.  Programmatic Navigation 
+13. Nested Routing 
 
 ### Optional problem solving sessions only if needed (We can discuss some problems together or some other things like unit testing components)
 #### Discuss your ideas / issues here: https://spectrum.chat/let-stalkreact-js?tab=posts
